@@ -12,4 +12,9 @@ let tomato_count;
 let Tomato_count;
 
 let additionResult = 2 + 5;
-console.log(additionResult);
+let result = 5;
+result = result + 1;
+result += 1;
+console.log(++result);
+result++;
+++result;
