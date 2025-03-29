@@ -7,7 +7,9 @@ let tomatocount;
 let $tomato$Count;
 let _tomato_Count;
 let tomato7Count;
-let 7tomatoCount;
 let トマトカウント;
 let tomato_count;
 let Tomato_count;
+
+let additionResult = 2 + 5;
+console.log(additionResult);
