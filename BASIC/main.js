@@ -17,9 +17,17 @@ result = result + 1;
 result += 1;
 console.log(++result);
 result;
-++++result;
+++result;
 let number = 10;
 number = -4;
 number = 32.42;
 let string = 'Hello';
 number = 'something';
+const userName = `Yoshipi`;
+string = 'Hello ' + userName + '!';
+string = `Hello ${userName}!`
+string = ' " ` ` " ';
+string = ` \\ `;
+string = 'Hello\nYoshipi';
+string = `Hello Yoshipi`;
+console.log(string);
