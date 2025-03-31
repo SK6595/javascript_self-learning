@@ -30,4 +30,12 @@ string = ' " ` ` " ';
 string = ` \\ `;
 string = 'Hello\nYoshipi';
 string = `Hello Yoshipi`;
-console.log(string);
+
+const userInput = '10.9';
+let calcResult;
+calcResult = Number(userInput) + 10;
+calcResult = parseInt(userInput) + 10;
+calcResult = parseFloat(userInput) + 10;
+const tenNumber = 10;
+calcResult = '10' + tenNumber.toString();
+console.log(calcResult);
