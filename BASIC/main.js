@@ -15,7 +15,7 @@ let additionResult = 2 + 5;
 let result = 5;
 result = result + 1;
 result += 1;
-console.log(++result);
+// console.log(++result);
 result;
 ++result;
 let number = 10;
@@ -25,12 +25,11 @@ let string = 'Hello';
 number = 'something';
 const userName = `Yoshipi`;
 string = 'Hello ' + userName + '!';
-string = `Hello ${userName}!`
+string = `Hello ${userName}!`;
 string = ' " ` ` " ';
 string = ` \\ `;
 string = 'Hello\nYoshipi';
 string = `Hello Yoshipi`;
-
 const userInput = '10.9';
 let calcResult;
 calcResult = Number(userInput) + 10;
@@ -38,4 +37,14 @@ calcResult = parseInt(userInput) + 10;
 calcResult = parseFloat(userInput) + 10;
 const tenNumber = 10;
 calcResult = '10' + tenNumber.toString();
-console.log(calcResult);
+
+let boolean = true;
+boolean = false;
+
+let array = ['apple', 'banana', 'grape'];
+array = [1, 2, 3];
+array = [1, 'apple', true, array];
+array = ['apple', 'banana', 'grape'];
+array = [];
+array.push('apple');
+console.log(array);
