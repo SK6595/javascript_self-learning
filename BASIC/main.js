@@ -59,5 +59,6 @@ const coffee = {
     },
 };
 coffee.isHot = false;
-coffee.barista = 'Yoshipi';
-console.log(coffee);
+let userInfo;
+userInfo = undefined;
+array[10]
