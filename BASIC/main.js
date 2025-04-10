@@ -48,17 +48,21 @@ array = ['apple', 'banana', 'grape'];
 array = [];
 array.push('apple');
 const coffee = {
-    name: 'Chocolate Mocha',
-    size: 350,
-    isHot: true,
-    toppings: ['Cinnamon', 'Caramel'],
-    nutritions: {
-      calories: 430,
-      sugars: 53,
-      caffeine: 100
-    },
+  name: 'Chocolate Mocha',
+  size: 350,
+  isHot: true,
+  toppings: ['Cinnamon', 'Caramel'],
+  nutritions: {
+    calories: 430,
+    sugars: 53,
+    caffeine: 100,
+  },
 };
 coffee.isHot = false;
-let userInfo;
-userInfo = undefined;
-array[10]
+let userInfo = null;
+
+// 以下は関数の自己学習
+function add() {
+  console.log(1 + 1);
+}
+add();
