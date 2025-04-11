@@ -66,3 +66,12 @@ function add() {
   console.log(1 + 1);
 }
 add();
+
+// 以下はパラメータと引数の自己学習
+
+function add(num1, num2) {
+  console.log(num1 + num2);
+}
+add(2, 3);
+add(6, 3);
+add(10, 5);
