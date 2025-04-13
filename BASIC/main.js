@@ -68,10 +68,16 @@ function add() {
 add();
 
 // 以下はパラメータと引数の自己学習
-
 function add(num1, num2) {
   console.log(num1 + num2);
 }
 add(2, 3);
 add(6, 3);
 add(10, 5);
+
+//以下は戻り値の自己学習
+function add(num1, num2) {
+  return num1 + num2;
+}
+const returnedValue = add(2, 3);
+console.log(returnedValue);
