@@ -79,5 +79,12 @@ add(10, 5);
 function add(num1, num2) {
   return num1 + num2;
 }
+
+//以下はスコープの自己学習
+const value = 'hello';
+function add(num1, num2) {
+  const value = num1 + num2;
+  console.log(value);
+  return value;
+}
 const returnedValue = add(2, 3);
-console.log(returnedValue);
