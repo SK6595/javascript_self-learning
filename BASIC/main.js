@@ -61,20 +61,6 @@ const coffee = {
 coffee.isHot = false;
 let userInfo = null;
 
-// 以下は関数の自己学習
-function add() {
-  console.log(1 + 1);
-}
-add();
-
-// 以下はパラメータと引数の自己学習
-function add(num1, num2) {
-  console.log(num1 + num2);
-}
-add(2, 3);
-add(6, 3);
-add(10, 5);
-
 //以下は戻り値の自己学習
 function add(num1, num2) {
   return num1 + num2;
@@ -82,9 +68,10 @@ function add(num1, num2) {
 
 //以下はスコープの自己学習
 const value = 'hello';
+
+// this is a function
 function add(num1, num2) {
   const value = num1 + num2;
-  console.log(value);
   return value;
 }
-const returnedValue = add(2, 3);
+const returnedValue = add();
