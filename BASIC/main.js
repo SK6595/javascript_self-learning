@@ -46,6 +46,7 @@ array = [1, 2, 3];
 array = [1, 'apple', true, array];
 array = ['apple', 'banana', 'grape'];
 array = [];
+console.log('hello');
 array.push('apple');
 const coffee = {
   name: 'Chocolate Mocha',
