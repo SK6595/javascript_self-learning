@@ -2,15 +2,15 @@ let count = 0;
 count = 30;
 let newCount = 0;
 const daysInWeek = 7;
+debugger;
 let tomatoCount;
-let tomatocount;
+let TomatoCount;
+let tomato_count;
 let $tomato$Count;
 let _tomato_Count;
-let tomato7Count;
+debugger;
+let tomatoCount7;
 let トマトカウント;
-let tomato_count;
-let Tomato_count;
-
 let additionResult = 2 + 5;
 let result = 5;
 result = result + 1;
@@ -63,7 +63,6 @@ let userInfo = null;
 
 //以下は戻り値の自己学習
 function add(num1, num2) {
-  console.log('num1:', num1, 'num2:', num2);
   const value = num1 + num2;
   return value;
 }
