@@ -14,6 +14,7 @@ ok = 1 == 1;
 ok = 1 === '1'; /*基本的に同じかどうかを比べる時は、「===」演算子を使うようにする*/
 ok = 1 != '2'; /*基本的に異なるかどうかを比べる時は、「!==」演算子を使うようにする*/
 
+
 const coffee1 = { name: 'Cafe Latte' };
 const coffee2 = { name: 'Cafe Latte' };
 const coffee3 = coffee1;
@@ -22,4 +23,8 @@ ok = coffee1.name === coffee2.name;
 const fruits1 = ['apple', 'banana']; /*配列もオブジェクトになる*/
 const fruits2 = ['apple', 'banana'];
 ok = fruits1 === fruits2; /*オブジェクトが2回生成されているためfalseになる*/
+
+ok = 1 > 0;
+ok = 'a' < 'b'; /*辞書順としては、bの方が後に来るため、bの方が数字的に大きくなる*/
+ok = 'A' < 'a'; /*辞書順としては、aの方が後に来るため、aの方が数字的に大きくなる*/
 console.log(ok);
