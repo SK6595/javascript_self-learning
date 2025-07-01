@@ -27,4 +27,10 @@ ok = fruits1 === fruits2; /*オブジェクトが2回生成されているため
 ok = 1 > 0;
 ok = 'a' < 'b'; /*辞書順としては、bの方が後に来るため、bの方が数字的に大きくなる*/
 ok = 'A' < 'a'; /*辞書順としては、aの方が後に来るため、aの方が数字的に大きくなる*/
-console.log(ok);
+ok = 100;
+ok = 'false'; /*文字列のfalseはあくまで文字列のため「Truthy」となる*/
+if (ok) {
+  console.log('OK!');
+} else {
+  console.log('NO!');
+}
