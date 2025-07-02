@@ -28,9 +28,14 @@ ok = 1 > 0;
 ok = 'a' < 'b'; /*辞書順としては、bの方が後に来るため、bの方が数字的に大きくなる*/
 ok = 'A' < 'a'; /*辞書順としては、aの方が後に来るため、aの方が数字的に大きくなる*/
 ok = 100;
+ok = {};
 ok = 'false'; /*文字列のfalseはあくまで文字列のため「Truthy」となる*/
 if (ok) {
-  console.log('OK!');
+  // console.log('OK!');
 } else {
   console.log('NO!');
 }
+ok = false && true; /*論理積演算子は、左側が「Truthy」だったら右側の値を返し、左側の値が「Falsy」だったら左側の値を返す。（論理積演算子の厳密な定義）*/
+ok = false || false;
+ok = 0 && 'hi';
+console.log(ok);
