@@ -37,5 +37,8 @@ if (ok) {
 }
 ok = false && true; /*論理積演算子は、左側が「Truthy」だったら右側の値を返し、左側の値が「Falsy」だったら左側の値を返す。（論理積演算子の厳密な定義）*/
 ok = false || false;
-ok = 0 && 'hi';
-console.log(ok);
+ok = 'hello' && 'hi';
+ok = '' || 'hi';
+const userInput = '';
+const userName = userInput || 'User'; /*左側の値がnull、undefined、空文字、0などの値だった場合に、デフォルトの値で右側の値にするという書き方は、OR演算子で非常によくある。*/
+console.log(userName);
