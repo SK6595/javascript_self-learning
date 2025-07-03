@@ -41,4 +41,11 @@ ok = 'hello' && 'hi';
 ok = '' || 'hi';
 const userInput = '';
 const userName = userInput || 'User'; /*左側の値がnull、undefined、空文字、0などの値だった場合に、デフォルトの値で右側の値にするという書き方は、OR演算子で非常によくある。*/
-console.log(userName);
+const x = 15;
+ok = x > 10 && x < 20;
+ok = x === 10 || x > 12 && userName;
+if (ok) {
+  console.log('OK!');
+} else {
+  console.log('NO!');
+}
