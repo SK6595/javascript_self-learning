@@ -55,5 +55,10 @@ ok = !!x;
 
 const hello = 'hello2';
 { //ブロック文（{ })は、複数の文や宣言を一つにまとめる文になる。
-  const hello = 'hello1';   
+  const hello = 'hello1';
 }
+ok = false
+ok = ok ? 'OK' : 'NO'; //三項演算子もif文のように条件分岐することができる。三項演算子は値を返すif文みたいな感じ。
+if (ok) ok = 'OK';
+else ok = 'NO';
+console.log(ok);
