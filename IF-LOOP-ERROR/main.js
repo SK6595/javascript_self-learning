@@ -59,6 +59,36 @@ const hello = 'hello2';
 }
 ok = false
 ok = ok ? 'OK' : 'NO'; //三項演算子もif文のように条件分岐することができる。三項演算子は値を返すif文みたいな感じ。
-if (ok) ok = 'OK';
-else ok = 'NO';
-console.log(ok);
+
+function vegetableColor(vegetable) {
+  switch (vegetable) { //switch文は、if文とは違う条件分岐として使える文になる。
+    case 'tomato': { //コロンを打った後に、複数の文や宣言を書くことができる。case文は何個も繋げることができる。
+      const message = 'tamato is red!';
+      console.log(message);
+      break; //関数の中であれば、breakeではなく、returnでも全く同じ意味になる。
+    }
+    case 'carrot':
+    case 'pumpkin': { //caseを2つ書くというテクニックもある。
+      const message = `${vegetable} is orange!`
+      console.log(message);
+      break;
+    }
+    case 'onion': {
+      const message = 'onion is white!'
+      console.log(message);
+      break;
+    }
+    default: { //defaultはどこに書いても良い。
+      const message = 'not found'
+      console.log(message);
+    }
+  }
+  // if (vegetable === 'tamato') {
+  //   console.log('tamato is red!');
+  // } else if (vegetable === 'pumpkin') {
+  //   console.log('pumpkin is orange!');
+  // } else if (vegetable === 'onion') {
+  //   console.log('onion is white!');
+  // }
+}
+vegetableColor('tomato');
