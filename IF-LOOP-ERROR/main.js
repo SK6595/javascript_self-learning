@@ -91,4 +91,9 @@ function vegetableColor(vegetable) {
   //   console.log('onion is white!');
   // }
 }
-vegetableColor('tomato');
+// vegetableColor('tomato');
+let count = 0;
+while (count < 10) { //while文は、丸括弧の後に好きな文を書くが、一般的には「ブロック文」を書くことが多い。丸括弧の中には「式」を入れることができる。
+  console.log(count)
+  count += 1;
+}
