@@ -97,3 +97,9 @@ while (count < 10) { //while文は、丸括弧の後に好きな文を書くが�
   console.log(count)
   count += 1;
 }
+
+let tomatoCount = 100;
+do { //do-while文では、まずdoの後の「{}」が実行される。
+  console.log('do-while: ', tomatoCount);
+  tomatoCount += 1;
+} while (tomatoCount < 10);
