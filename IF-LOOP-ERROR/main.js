@@ -94,7 +94,12 @@ function vegetableColor(vegetable) {
 // vegetableColor('tomato');
 let count = 0;
 while (count < 10) { //while文は、丸括弧の後に好きな文を書くが、一般的には「ブロック文」を書くことが多い。丸括弧の中には「式」を入れることができる。
-  console.log(count)
+  console.log(count);
+  console.log(count);
+  console.log(count);
+  console.log(count);
+  console.log(count);
+  console.log(count);
   count += 1;
 }
 
@@ -103,3 +108,7 @@ do { //do-while文では、まずdoの後の「{}」が実行される。
   console.log('do-while: ', tomatoCount);
   tomatoCount += 1;
 } while (tomatoCount < 10);
+
+for (let pumpkinCount = 0; pumpkinCount < 10; pumpkinCount += 1){
+  console.log(pumpkinCount)
+} //「()」の後は何でも好きな文を書くことはできるが、一般的にはブロック文が取られる。「()」の中は、必ず2つセミコロンを取る。「(;;)」は、3つ式を取るという意味になる。
