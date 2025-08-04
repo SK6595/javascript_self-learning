@@ -109,6 +109,6 @@ do { //do-while文では、まずdoの後の「{}」が実行される。
   tomatoCount += 1;
 } while (tomatoCount < 10);
 
-for (let pumpkinCount = 0; pumpkinCount < 10; pumpkinCount += 1){
-  console.log(pumpkinCount)
+for (let pumpkinCount = 0, i = 0; pumpkinCount < 10; pumpkinCount += 1, i += 1){
+  console.log(pumpkinCount, i);
 } //「()」の後は何でも好きな文を書くことはできるが、一般的にはブロック文が取られる。「()」の中は、必ず2つセミコロンを取る。「(;;)」は、3つ式を取るという意味になる。
