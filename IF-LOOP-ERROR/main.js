@@ -113,3 +113,11 @@ for (let pumpkinCount = 0, i = 0; pumpkinCount < 10; pumpkinCount += 1, i += 1){
   console.log(pumpkinCount, i);
 } //「()」の後は何でも好きな文を書くことはできるが、一般的にはブロック文が取られる。「()」の中は、必ず2つセミコロンを取る。「(;;)」は、3つ式を取るという意味になる。
 //letの中のカンマもlet宣言の一つになる。最後の式のカンマは、「カンマ演算子」になる。カンマ演算子は複数の式を1つの式にまとめるようなものになる。
+
+const fruits = ['apple', 'banana', 'grape', 'orange', 'mango'];
+for (let i = 0; i < fruits.length; i += 1) {
+  console.log(fruits[i]);
+}
+for (const fruit of fruits) {
+  console.log(fruit);
+}
