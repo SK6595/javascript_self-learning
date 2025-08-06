@@ -116,8 +116,17 @@ for (let pumpkinCount = 0, i = 0; pumpkinCount < 10; pumpkinCount += 1, i += 1){
 
 const fruits = ['apple', 'banana', 'grape', 'orange', 'mango'];
 for (let i = 0; i < fruits.length; i += 1) { //i < fruits.lengthと書くことで、配列の数を教えてくれる。
-  console.log(fruits[i]);
+  // console.log(fruits[i]);
 }
 for (const fruit of fruits) { //for-of文は、配列をループするための文になる。あまり配列の中の値を書き換えることはないので、基本的にはconstで書くことがすごく一般的である。
-  console.log(fruit); //「fruit」の箇所は、他のfor文やwhile文とは違い、1回1回削除されているイメージで、毎回毎回ループごとに違うブロック文の中で実行している（使用している）というイメージを持つこと。
-} 
+  // console.log(fruit); //「fruit」の箇所は、他のfor文やwhile文とは違い、1回1回削除されているイメージで、毎回毎回ループごとに違うブロック文の中で実行している（使用している）というイメージを持つこと。
+}
+const coffee = {
+  name: 'Cafe Latte',
+  size: 350,
+  isHot: true,
+};
+for (const key in fruits) { //「key」はnameやsizeなどのkeyを取っている。配列の場合は、for-of文を使用することの方が多い。
+  console.log(key);
+  console.log(fruits[key]);
+}
