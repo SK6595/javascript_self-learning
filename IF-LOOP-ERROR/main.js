@@ -95,11 +95,6 @@ function vegetableColor(vegetable) {
 let count = 0;
 while (count < 10) { //while文は、丸括弧の後に好きな文を書くが、一般的には「ブロック文」を書くことが多い。丸括弧の中には「式」を入れることができる。
   console.log(count);
-  console.log(count);
-  console.log(count);
-  console.log(count);
-  console.log(count);
-  console.log(count);
   count += 1;
 }
 
@@ -133,4 +128,13 @@ for (const key in coffee) { //「key」はnameやsizeなどのkeyを取ってい
     console.log('break!');
     break;
   }
+}
+for (const key in coffee) {
+  if (key === 'size') {
+    console.log('continue!');
+    continue; //continue文は、「一時的にbreakする、一時的にリターンして、そのループの回はスキップする」という意味になる。
+    //continue文に当たると、それ以降は「console.log(key);」や「console.log(coffee[key]);」の処理は一切されずに、次のisHotに行く。
+  }
+  console.log(key);
+  console.log(coffee[key]);
 }
