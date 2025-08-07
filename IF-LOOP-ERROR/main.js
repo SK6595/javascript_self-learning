@@ -126,7 +126,11 @@ const coffee = {
   size: 350,
   isHot: true,
 };
-for (const key in fruits) { //「key」はnameやsizeなどのkeyを取っている。配列の場合は、for-of文を使用することの方が多い。
+for (const key in coffee) { //「key」はnameやsizeなどのkeyを取っている。配列の場合は、for-of文を使用することの方が多い。
   console.log(key);
-  console.log(fruits[key]);
+  console.log(coffee[key]);
+  if (key === 'size') { //sizeになった時に、ブロック文の中を実行し、breakしてfor文が直ちに終了する。
+    console.log('break!');
+    break;
+  }
 }
