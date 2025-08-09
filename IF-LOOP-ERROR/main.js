@@ -138,3 +138,14 @@ for (const key in coffee) {
   console.log(key);
   console.log(coffee[key]);
 }
+coffeeCondition: if (true) {
+  for (const key in coffee) {
+    coffeeCondition: if (key === 'size') {
+      console.log('break!');
+      break coffeeCondition;
+    }
+    console.log(key);
+    console.log(coffee[key]);
+  }
+  console.log('inside an if statement');
+}
