@@ -141,12 +141,22 @@ for (const key in coffee) {
 if (true) {
   coffeeCondition: for (const key in coffee) { //「coffeeCondition」の箇所がラベルになる。コロンの後に好きな文を書くことはできるが、宣言を書くことはできない。ラベルを文につけるというイメージ。
     //ラベル文は、break文、もしくは、continue文と一緒に使う。ただ、ラベル文は分かりづらいので、一般的にはあまり使われない。
-    console.log(key);
-    console.log(coffee[key]);
+    // console.log(key);
+    // console.log(coffee[key]);
     if (key === 'size') {
       console.log('continue!');
       continue coffeeCondition; //continueの場合は、必ずラベル文のコロンの右側の文がループをする文になっている必要がある。理由は、continueは「そのループをスキップして次のターンに行く」という意味になるから。
     }
   }
-  console.log('inside an if statement');
+  // console.log('inside an if statement');
 }
+const coffeeCondition = 'coffee'
+
+try { //try-catch文は、「エラーが起きた時に処理を継続させる文」になる。波括弧は他の文に変更することはできない。
+  console.log('1');
+  console.log(chocolate); //エラーについては「構文が正しいとなっている状態」でのエラーをキャッチすることができる。実行時のエラーは「例外」と呼んだりもする。
+} catch {
+  console.log('2'); //tryでエラーが起きた場合に、catchの中身が実行される。tryでエラーが起きなければcatchの中身は実行されない。
+}
+console.log('3');
+//try-catch文を使うタイミングは、「どうしてもエラーを完全に防ぐことができない時」になる。
