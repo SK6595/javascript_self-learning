@@ -153,10 +153,14 @@ if (true) {
 const coffeeCondition = 'coffee'
 
 try { //try-catch文は、「エラーが起きた時に処理を継続させる文」になる。波括弧は他の文に変更することはできない。
+  const hello = 'hello' //スコープは、関数やブロックスコープとかと同じになる。catchなどの「波括弧以外の箇所」からは参照できない。
   console.log('1');
   console.log(chocolate); //エラーについては「構文が正しいとなっている状態」でのエラーをキャッチすることができる。実行時のエラーは「例外」と呼んだりもする。
 } catch {
   console.log('2'); //tryでエラーが起きた場合に、catchの中身が実行される。tryでエラーが起きなければcatchの中身は実行されない。
+  try {
+    console.log(chocolate); //catchブロックの中でエラーが起きた場合は、キャッチすることはできないが、ネストすることはできる。
+  } catch {}
 }
 console.log('3');
 //try-catch文を使うタイミングは、「どうしてもエラーを完全に防ぐことができない時」になる。
