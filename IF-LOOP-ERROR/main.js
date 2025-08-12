@@ -164,3 +164,17 @@ try { //try-catch文は、「エラーが起きた時に処理を継続させる
 }
 console.log('3');
 //try-catch文を使うタイミングは、「どうしてもエラーを完全に防ぐことができない時」になる。
+
+function logChocolate() {
+  try {
+    console.log('try');
+    return 'hello';
+    // console.log(chocolate);
+  } catch {
+    console.log('catch')
+  } finally {
+    console.log('finally');
+    return 'hi';
+  }
+}
+console.log(logChocolate());
