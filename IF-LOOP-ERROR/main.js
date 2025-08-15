@@ -168,13 +168,14 @@ console.log('3');
 function logChocolate() {
   try {
     console.log('try');
-    return 'hello';
-    // console.log(chocolate);
+    // return 'hello';
+    console.log(chocolate);
   } catch {
-    console.log('catch')
-  } finally {
+    console.log('catch');
+    console.log(chocolate);
+  } finally { //finally文の中で、return、break、continueを書くと、どんなエラーが起こっていようが、どんなreturnを返そうが、「全て上書き」してしまうのがfinally文になる。
     console.log('finally');
-    return 'hi';
+    return 'hello';
   }
 }
 console.log(logChocolate());
