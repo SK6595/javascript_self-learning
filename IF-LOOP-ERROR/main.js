@@ -168,14 +168,12 @@ console.log('3');
 function logChocolate() {
   try {
     console.log('try');
-    // return 'hello';
-    console.log(chocolate);
-  } catch {
-    console.log('catch');
-    console.log(chocolate);
-  } finally { //finally文の中で、return、break、continueを書くと、どんなエラーが起こっていようが、どんなreturnを返そうが、「全て上書き」してしまうのがfinally文になる。
-    console.log('finally');
-    return 'hello';
+    console.log(chocolate); //エラーは内部的にオブジェクトを
+  } catch (error) { //catch文の右側に関数のパラメータのように、丸括弧を書いて、その中に何でも好きなパラメータを取ることができる。
+    console.log('catch', error);
   }
+  // finally { //finally文の中で、return、break、continueを書くと、どんなエラーが起こっていようが、どんなreturnを返そうが、「全て上書き」してしまうのがfinally文になる。
+  // console.log('finally');
+  // return 'hello';
+  // }
 }
-console.log(logChocolate());
