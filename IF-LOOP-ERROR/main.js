@@ -168,7 +168,7 @@ console.log('3');
 function logChocolate() {
   try {
     console.log('try');
-    console.log(chocolate); //エラーは内部的にオブジェクトを
+    console.log(chocolate); //エラーは内部的にオブジェクトを返している。
   } catch (error) { //catch文の右側に関数のパラメータのように、丸括弧を書いて、その中に何でも好きなパラメータを取ることができる。
     console.log('catch', error);
   }
