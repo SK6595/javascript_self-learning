@@ -7,7 +7,9 @@
   </head>
   <body>
     <script>
-      document.write('今日は、2025/01/01です');
+      const today = new Date();
+      const theDate = today.getDate(); // getDateメソッドはパラメータが空でも問題ない。
+      document.write('今日は、2025/01/' + theDate + 'です');
     </script>
   </body>
 </html>
