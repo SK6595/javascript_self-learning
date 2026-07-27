@@ -7,8 +7,9 @@
   </head>
   <body>
     <script>
-      const today = new Date();
-      const theDate = today.getDate(); // getDateメソッドはパラメータが空でも問題ない。
+      const today = new Date(); // todayは日付を司ることができるオブジェクトになる。
+      const newyear = new Date(2029, 1, 1); //括弧の中に、年や月や日を書くことによって、今日の日付以外の日付のオブジェクトを作ることができる。
+      const theDate = newyear.getDate(); // getDateメソッドはパラメータが空でも問題ない。
       document.write('今日は、2025/01/' + theDate + 'です');
     </script>
   </body>
