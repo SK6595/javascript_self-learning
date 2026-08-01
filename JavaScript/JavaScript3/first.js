@@ -1,0 +1,1 @@
+alert('はじめてのJavaScript!'); //alertの前の「window.」は省略可
