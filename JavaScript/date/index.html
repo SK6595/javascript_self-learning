@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -8,9 +8,12 @@
   <body>
     <script>
       const today = new Date(); // todayは日付を司ることができるオブジェクトになる。
-      const newyear = new Date(2029, 1, 1); //括弧の中に、年や月や日を書くことによって、今日の日付以外の日付のオブジェクトを作ることができる。
-      const theDate = newyear.getDate(); // getDateメソッドはパラメータが空でも問題ない。
-      document.write('今日は、2025/01/' + theDate + 'です');
+      const theYear = today.getFullYear();
+      const theMonth = today.getMonth() + 1; // 0-11で取得
+      const theDate = today.getDate(); // getDateメソッドはパラメータが空でも問題ない。
+      document.write(
+        '今日は、' + theYear + '/'
+          + theMonth + '/' + theDate + 'です');
     </script>
   </body>
 </html>
