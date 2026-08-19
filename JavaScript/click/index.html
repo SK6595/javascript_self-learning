@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+      const caution = () => {
+        alert('クリックされました');
+      }
+    </script>
 </head>
 <body>
   <!-- 「onclick」はHTMLのイベント定義の属性 -->
-  <button onclick="alert('クリックされました')">表示する</button>
+  <!-- クリックされた時にcautionという関数を呼び出す -->
+  <button onclick="caution()">表示する</button>
     <div>
         <p>長いコンテンツ</p>
         <p>長いコンテンツ</p>
