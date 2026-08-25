@@ -4,28 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-      // アロー関数
-      // cautionが関数となっている。
-      const caution = () => {
-        alert('クリックされました');
-      }
-
-      /*
-      function caution() {
-        alert('クリックされました');
-      }
-
-      const caution = function() {
-        alert('クリックされました');
-      }
-      */
-    </script>
 </head>
 <body>
   <!-- 「onclick」はHTMLのイベント定義の属性 -->
   <!-- クリックされた時にcautionという関数をイベントから呼び出す -->
-  <button onclick="caution()">表示する</button>
+  <button id="open_button">表示する</button>
     <div>
         <p>長いコンテンツ</p>
         <p>長いコンテンツ</p>
@@ -37,5 +20,27 @@
         <p>長いコンテンツ</p>
         <p>長いコンテンツ</p>
     </div>
+    
+    <script>
+      // アロー関数
+      // cautionが関数となっている。
+      const caution = () => {
+        alert('クリックされました');
+      }
+      
+      const btn = document.getElementById('open_button');
+      // 「btn」はボタンオブジェクトになる
+      btn.addEventListener('click', caution);
+
+      /*
+      function caution() {
+        alert('クリックされました');
+      }
+
+      const caution = function() {
+        alert('クリックされました');
+      }
+      */
+    </script>
 </body>
 </html>
