@@ -8,7 +8,18 @@ const color = document.querySelector('#colorPicker');
 text.textContent = `カラーコード：${color.value}`;
 
 const colorBg = () => {
-  text.textContent = `カラーコード：${color.value}`;
+  // 選択した色を背景色に設定
+  document.body.style.backgroundColor = color.value;
+
+  // カラーコードを表示
+  if (color.value === '#ffffff') {
+    text.textContent = `カラーコード： ${color.value}(white)`;
+  } else if (color.value === '#000000') {
+    text.textContent = `カラーコード： ${color.value}(black)`;
+  }
+  else {
+    text.textContent = `カラーコード：${color.value}`;
+  }
 };
 
 // カラーピッカーが変更されたら colorBgを発動させる
@@ -20,11 +31,11 @@ color.addEventListener('input', colorBg);
 // };
 // message('Mana', 'いい天気');
 
-// 関数では処理の結果だけ出したい その結果の使い道は後から指定したいという場合
-const message = (name, weather) => {
-  // 関数の中で処理を終わらせるなら「return」を使う必要はないが 関数の中で処理をした結果をどう利用したいかで「return」を使うかどうか考える
-  // 関数の中で「return」と書くと それ以降の処理は実行されない
-  return `${name}さん、こんにちは！今日は${weather}です。`;
-};
-console.log(message('Mana', 'いい天気'));
-alert(message('達也', '雨'));
+// // 関数では処理の結果だけ出したい その結果の使い道は後から指定したいという場合
+// const message = (name, weather) => {
+// // 関数の中で処理を終わらせるなら「return」を使う必要はないが 関数の中で処理をした結果をどう利用したいかで「return」を使うかどうか考える
+// // 関数の中で「return」と書くと それ以降の処理は実行されない
+//   return `${name}さん、こんにちは！今日は${weather}です。`;
+// };
+// console.log(message('Mana', 'いい天気'));
+// alert(message('達也', '雨'));
