@@ -9,7 +9,7 @@
   <!-- 「onclick」はHTMLのイベント定義の属性 -->
   <!-- クリックされた時にcautionという関数をイベントから呼び出す -->
   <button id="open_button">表示する</button>
-    <div>
+    <div id="long_content">
         <p>長いコンテンツ</p>
         <p>長いコンテンツ</p>
         <p>長いコンテンツ</p>
@@ -27,10 +27,12 @@
       // const caution = () => {
       //   alert('クリックされました');
       // }
-
+      
+      const longContent = document.getElementById('long_content');
+      longContent.style.display = 'none';
       // 「open_button」というIDが付いたHTMLの要素を取得して そしてという感じで そのまま取得した要素に「addEventListener」にイベントを割り当てる
       document.getElementById('open_button').addEventListener('click', () => {
-        alert('クリックされました');
+        longContent.style.display = 'block';
       });
 
       /*
