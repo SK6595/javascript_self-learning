@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+  <button>検索</button>
   <form action="" method="get">
     <div>
       <label>
@@ -18,5 +19,12 @@
       <button type="submit">送信</button>
     </div>
   </form>
+  
+  <script>
+    // その要素を特定できる場合に限り querySelectorが使える
+    // querySelectorは CSSのセレクタがそのまま使える
+    // formタグの中のbuttonタグという指定
+    document.querySelector('form button').disabled = true;
+  </script>
 </body>
 </html>
