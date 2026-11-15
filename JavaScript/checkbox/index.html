@@ -25,6 +25,11 @@
     // querySelectorは CSSのセレクタがそのまま使える
     // formタグの中のbuttonタグという指定
     document.querySelector('form button').disabled = true;
+    // getElementByIdよりもquerySelectorの方が何かと便利
+    // changeイベントはチェック状態がチェックされた時 もしくは チェックから外れた時を
+    document.querySelector('#agree').addEventListener('change', () => {
+      alert('変更されました');
+    });
   </script>
 </body>
 </html>
