@@ -1,6 +1,17 @@
 // ID「menu」のdivを定数「menu」に入れている
 const menu = document.querySelector('#menu');
 
+// 要素と要素の間にカンマを忘れないこと
+const lists = [
+  'strawberry.jpg',
+  'lime.jpg',
+  'mango.jpg',
+  'lemon.jpg',
+  'fig.jpg',
+  'apple.jpg',
+];
+console.log(lists);
+
 // 挿入したいコンテンツ内容をテンプレート文字列で定数「content」にまとめている
 // 定数「content」は 「images」フォルダー内に保存している「strawberry.jpg」というイチゴジュースの画像をdivに入れておくという内容
 const content = `<div><img src="images/strawberry.jpg" alt=""></div>`;
