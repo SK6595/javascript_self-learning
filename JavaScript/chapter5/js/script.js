@@ -10,11 +10,17 @@ const lists = [
   'fig.jpg',
   'apple.jpg',
 ];
-console.log(lists);
+// console.log(lists);
 
 // 挿入したいコンテンツ内容をテンプレート文字列で定数「content」にまとめている
 // 定数「content」は 「images」フォルダー内に保存している「strawberry.jpg」というイチゴジュースの画像をdivに入れておくという内容
-const content = `<div><img src="images/strawberry.jpg" alt=""></div>`;
+const content = `<div><img src="images/${lists[0]}" alt=""></div>
+  <div><img src="images/${lists[1]}" alt=""></div>
+  <div><img src="images/${lists[2]}" alt=""></div>
+  <div><img src="images/${lists[3]}" alt=""></div>
+  <div><img src="images/${lists[4]}" alt=""></div>
+  <div><img src="images/${lists[5]}" alt=""></div>
+`;
 
 // textContentを使って文字列などを表示するとすべての内容がそのまま文字列として表示されていてHTMLタグとして認識されない
 // menu.textContent = content;
